@@ -1,0 +1,144 @@
+.wrapper{
+    background-color: antiquewhite;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.notification{
+    margin: auto;
+    position: relative;
+    display: block;
+    /* box-shadow: 0 0 1px 1px #FF650B; */
+    
+}
+.notification::before{
+    content:"";
+    position: absolute;
+    top: -65px;
+    right: 10px;
+    border-style: solid;
+    border-color:transparent transparent #E4E4E4 transparent;
+    border-width: 40px 35px;
+}
+
+.notification__header{
+    width: 98%;
+    height: 50px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    background-color: #E4E4E4;
+}
+.notification__header,p{
+    padding: 2px 4px;
+    line-height: 10px;
+    color: rgb(96,96,96);
+}
+
+.notification__body{
+    position: relative;
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+}
+
+
+.notification__all{
+    height: 55vh;
+    overflow-y:auto ;
+
+}
+.notification__body::after{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    margin: 0 20px 0 ;
+    border-bottom: 1px solid #E4E4E4;
+
+}
+
+
+.notification__img{
+    width: 60px;
+    height: 60px;
+    padding: 15px 5px 15px 20px;
+}
+
+.notification__cart{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.notification__name{
+    line-height: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.notification__text{
+    margin: 8px 8px;
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 500;
+    width: 200px;
+    flex: 1;
+    max-height: 36px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.notification__good{
+    margin: 0;
+    padding: 4px 8px;
+    font-size: 13px;
+}
+
+.notification__mony{
+    margin-top: 4px;
+
+}
+
+.notification__number1{
+    color: orangered;
+}
+
+.notification__number2{
+    padding: 0 3px;
+}
+
+.notification__number3{
+    padding-right: 4px;
+}
+
+.notification__delete{
+    margin: 8px 0;
+    text-align: right;
+    padding: 0 15px;
+}
+
+.notification__footer{
+    background-color: #E4E4E4;
+    height: 50px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.notification__btn{
+    font-size: 15px;
+    margin: 9px 0 0 300px;
+    font-weight: 500;
+    background-color: #FF650B;
+    border: none;
+    outline: none;
+    color: white;
+    line-height: 30px;
+    border-radius: 10px;
+   
+}
